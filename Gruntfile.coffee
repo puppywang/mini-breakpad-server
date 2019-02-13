@@ -4,6 +4,8 @@ module.exports = (grunt) ->
 
     coffee:
       glob_to_multiple:
+        options: 
+          sourceMap: true 
         expand: true
         cwd: 'src'
         src: ['*.coffee']
